@@ -1,5 +1,5 @@
 # 《Chrome V8原理讲解》系列技术文章，3~4天一篇，持续更新中...   
-![avatar](v8.png) 
+![avatar](v8.png)   
 V8是chrome核心组件，重要程度不用多言。本系列文章，讲解V8源码，力求做到全面覆盖知识点、有理论支撑，做到细致讲解源码、有实践依据。  
 
 **安全客**：https://www.anquanke.com/member.html?memberId=161290    
