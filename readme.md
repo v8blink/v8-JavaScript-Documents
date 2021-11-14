@@ -4,7 +4,7 @@ V8是chrome核心组件，重要程度不用多言。本系列文章，讲解V8�
 
 **安全客**：https://www.anquanke.com/member.html?memberId=161290    
 **知乎** ： https://www.zhihu.com/people/v8blink  
-**知乎和GitHub延后一周更新** 
+知乎和GitHub延后一周更新   
 
 我是**灰豆**，吃饭睡觉打豆豆。  
 **微信**：qq9123013  备注：v8交流  
