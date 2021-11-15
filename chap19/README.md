@@ -142,7 +142,7 @@ bool Isolate::Init(ReadOnlyDeserializer* read_only_deserializer,
 21.        Handle<String>(String::cast(script->name()), isolate()));
 22.  }
 ```  
-代码1~3行的注释说明了它的判断规则，代码14~18行可以看出规则的具体实现方法是：使用行、列偏移量计算出代码块，判断Sharedfunction是否包含该代码块。  
+代码1-3行的注释说明了它的判断规则，代码14~18行可以看出规则的具体实现方法是：使用行、列偏移量计算出代码块，判断Sharedfunction是否包含该代码块。  
 回到`CompilationCacheScript::Lookup()`代码27行，`HasOrigin()`结果为真说明找到了正解的Sharedfunction，代码40行返回。  
 `CompilationCache::PutScript()`负责填充Cache，源码如下：  
 ```c++
