@@ -265,7 +265,7 @@ Javascript源码先转成V8的内部字符串，内部字符串编译后生成Sh
 创建`Paser`实例后，返回`bool ParseProgram()`，代码6行，进行语法分析，期间还需要创建扫描器，下次讲解。  
 **技术总结**  
 **（1）** Javascript源码进入V8后需要转码；  
-**（2）** Javascript源码在V8内的表示是`Source`类,全称是`v8::internal::source`；
+**（2）** Javascript源码在V8内的表示是`Source`类,全称是`v8::internal::source`；  
 **（3）** 先查编译缓存，缓存缺失时启动编译；  
 **（4）** 语法分析器先启动，Token缺失时启动词法分析器。  
 好了，今天到这里，下次见。   
