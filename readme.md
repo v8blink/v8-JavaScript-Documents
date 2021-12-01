@@ -12,6 +12,8 @@ V8是chrome核心组件，重要程度不用多言。本系列文章，讲解V8�
 恳请发Issue说明哪篇文章、什么问题。
 
 # 目录
+《Chrome V8源码》25.最难啃的骨头——Builtin！  
+《Chrome V8源码》24.编译5：SharedFunction与JSFunction的渊源  
 《Chrome V8源码》23.编译4：数据结构、重要的自动机  
 《Chrome V8源码》22.编译链3：Bytecode的秘密——常量池  
 《Chrome V8源码》21 编译链2：Token和AST，被忽略的秘诀  
