@@ -111,12 +111,12 @@ V8编译器以Function为粒度对源码进行编译，生成的结果叫SharedF
 **（1）** 第5行代码`Code GetCode() const`的作用是获得函数的源码。不要把“源码”误认为字节码，在大多数情况下，“源码”是Builtin，其作用是构建函数入口并调用第一条字节码；  
 **（2）** 第6行代码`static void SetScript()`的作用是设置JavaScript源码的成员变量；  
 **（3）** 第9~11行代码`EndPosition()、StartPosition()、SetPosition()`的作用是设置JavaScript源码的位置。源码开始和结束位置标记的代码块是SharedFunction中BytecodeArray对应的JavaScript源码；  
-**（4）** 第12~15行代码`IsApiFunction() const、get_api_func_data()、set_api_func_data()`的作用分别是：判断SharedFunction是不是API、获取ApiFun、设置ApiFun；  
-**（5）** 第16~18行代码`HasBytecodeArray()、set_bytecode_array()、GetBytecodeArray()`的作用分别是：判断BytecodeArray是否存在、设置BytecodeArray，获取BytecodeArray；  
+**（4）** 第12-15行代码`IsApiFunction() const、get_api_func_data()、set_api_func_data()`的作用分别是：判断SharedFunction是不是API、获取ApiFun、设置ApiFun；  
+**（5）** 第16-18行代码`HasBytecodeArray()、set_bytecode_array()、GetBytecodeArray()`的作用分别是：判断BytecodeArray是否存在、设置BytecodeArray，获取BytecodeArray；  
 **（6）** 第19行代码`InterpreterTrampoline`的作用是获取InterpreterTrampoline的地址指针。InterpreterTrampoline为Bytecode的执行做准备，具体参见相关源码，以后我会详细讲解；   
-**（7）** 第20~22行代码`HasInterpreterData()、interpreter_data()、set_interpreter_data()`的作用分别是判断、获取和设置解释器数据；   
-**（8）** 第24~26行代码`HasBuiltinId()、builtin_id()、set_builtin_id`的作用分别是判断、获取和设置BuiltinId;  
-**（9）** 第27~35行代码中名字中包含`Uncompile`方法的作用是设置SharedFunction的优化机制。Ignition执行JSFunction时会记录Feedback，V8根据Feedback决定是否把SharedFunction（与JSFunction对应的SharedFunction）翻译为hot code。SharedFunction的优化源码如下：  
+**（7）** 第20-22行代码`HasInterpreterData()、interpreter_data()、set_interpreter_data()`的作用分别是判断、获取和设置解释器数据；   
+**（8）** 第24-26行代码`HasBuiltinId()、builtin_id()、set_builtin_id`的作用分别是判断、获取和设置BuiltinId;  
+**（9）** 第27-35行代码中名字中包含`Uncompile`方法的作用是设置SharedFunction的优化机制。Ignition执行JSFunction时会记录Feedback，V8根据Feedback决定是否把SharedFunction（与JSFunction对应的SharedFunction）翻译为hot code。SharedFunction的优化源码如下：  
 ```c++
 #define BAILOUT_MESSAGES_LIST(V)                                            \
   V(kNoReason, "no reason")                                                 \
@@ -217,7 +217,7 @@ SharedFunction实例的内存布局如图1所示。
 36.    }
 37.  }
 ```  
-第14~21行设置编译模式、语法树ID等信息，第25行代码设置函数长度。  
+第14-21行设置编译模式、语法树ID等信息，第25行代码设置函数长度。  
 **（2）** 安装BytecodeArray到SharedFunction中，源码如下：  
 ```c++
 void InstallUnoptimizedCode(UnoptimizedCompilationInfo* compilation_info,
