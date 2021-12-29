@@ -14,36 +14,38 @@ V8涉及的技术十分广泛，包括了操作系统、编译技术、计算机
 文章中理论知识很少。我也想多讲解些理论，但个人能力和时间精力确实有限，无法做全面的讲解。文中有很多的不足与纰漏，欢迎批评指正。  
 # 文章目录  
 目前的最新目录如下：    
-《Chrome V8源码》33. Lazy Compile 的技术细节  
-《Chrome V8源码》32.字节码和 Compiler Pipeline 的细节  
-《Chrome V8源码》31.Ignition到底做了什么？（二）  
-《Chrome V8源码》30.Ignition到底做了什么？  
-《Chrome V8源码》29.CallBuiltin()调用过程详解  
-《Chrome V8源码》28.分析substring源码和隐式约定  
-《Chrome V8源码》27.神秘又简单的dispatch_table_  
-《Chrome V8源码》26.Bytecode Handler，字节码的核心  
-《Chrome V8源码》25.最难啃的骨头——Builtin！  
-《Chrome V8源码》24.编译5：SharedFunction与JSFunction的渊源  
-《Chrome V8源码》23.编译4：数据结构、重要的自动机  
-《Chrome V8源码》22.编译链3：Bytecode的秘密——常量池  
-《Chrome V8源码》21 编译链2：Token和AST，被忽略的秘诀  
-《Chrome V8源码》20.编译链1：语法分析，被遗忘的细节  
-《Chrome V8源码》19.V8 Isolate核心组件：编译缓存  
-《Chrome V8源码》18.利用汇编看V8，洞察看不见的行为  
-《Chrome V8源码》17.JS对象的内存布局与创建过程  
-《Chrome V8源码》16.运行时辅助类，详解加载与调用过程  
-《Chrome V8源码》15.运行时辅助类，给V8加钩子函数  
-《Chrome V8源码》14.看V8如何表示JS的动态类型  
-《Chrome V8源码》13.String类方法的源码分析  
-《Chrome V8源码》12.JSFunction源码分析  
-《Chrome V8源码》11.字节码调度 Dispatch机制  
-《Chrome V8源码》10.V8 Execution源码分析  
-《Chrome V8源码》9.Builtin源码分析  
-《Chrome V8源码》8.解释器Ignition  
-《Chrome V8源码》7.V8堆栈框架 Stack Frame  
-《Chrome V8源码》6.bytecode字节码生成  
-《Chrome V8源码》5.V8语法分析器源码讲解  
-《Chrome V8源码》4.V8词法分析源码讲解，Token字生成  
-《Chrome V8源码》3.看V8编译流程，学习词法分析  
-《Chrome V8源码》2.鸟瞰V8运行过程，形成大局观  
-《Chrome V8源码》1.V8环境搭建  
+《Chrome V8 源码》35. String.prototype.CharAt 源码分析  
+《Chrome V8 源码》34. 终级优化技术 Turbofan  
+《Chrome V8 源码》33. Lazy Compile 的技术细节  
+《Chrome V8 源码》32.字节码和 Compiler Pipeline 的细节  
+《Chrome V8 源码》31.Ignition到底做了什么？（二）  
+《Chrome V8 源码》30.Ignition到底做了什么？  
+《Chrome V8 源码》29.CallBuiltin()调用过程详解  
+《Chrome V8 源码》28.分析substring源码和隐式约定  
+《Chrome V8 源码》27.神秘又简单的dispatch_table_  
+《Chrome V8 源码》26.Bytecode Handler，字节码的核心  
+《Chrome V8 源码》25.最难啃的骨头——Builtin！  
+《Chrome V8 源码》24.编译5：SharedFunction与JSFunction的渊源  
+《Chrome V8 源码》23.编译4：数据结构、重要的自动机  
+《Chrome V8 源码》22.编译链3：Bytecode的秘密——常量池  
+《Chrome V8 源码》21 编译链2：Token和AST，被忽略的秘诀  
+《Chrome V8 源码》20.编译链1：语法分析，被遗忘的细节  
+《Chrome V8 源码》19.V8 Isolate核心组件：编译缓存  
+《Chrome V8 源码》18.利用汇编看V8，洞察看不见的行为  
+《Chrome V8 源码》17.JS对象的内存布局与创建过程  
+《Chrome V8 源码》16.运行时辅助类，详解加载与调用过程  
+《Chrome V8 源码》15.运行时辅助类，给V8加钩子函数  
+《Chrome V8 源码》14.看V8如何表示JS的动态类型  
+《Chrome V8 源码》13.String类方法的源码分析  
+《Chrome V8 源码》12.JSFunction源码分析  
+《Chrome V8 源码》11.字节码调度 Dispatch机制  
+《Chrome V8 源码》10.V8 Execution源码分析  
+《Chrome V8 源码》9.Builtin源码分析  
+《Chrome V8 源码》8.解释器Ignition  
+《Chrome V8 源码》7.V8堆栈框架 Stack Frame  
+《Chrome V8 源码》6.bytecode字节码生成  
+《Chrome V8 源码》5.V8语法分析器源码讲解  
+《Chrome V8 源码》4.V8词法分析源码讲解，Token字生成  
+《Chrome V8 源码》3.看V8编译流程，学习词法分析  
+《Chrome V8 源码》2.鸟瞰V8运行过程，形成大局观  
+《Chrome V8 源码》1.V8环境搭建  
