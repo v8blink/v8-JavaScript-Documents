@@ -14,6 +14,7 @@ V8涉及的技术十分广泛，包括了操作系统、编译技术、计算机
 文章中理论知识很少。我也想多讲解些理论，但个人能力和时间精力确实有限，无法做全面的讲解。文中有很多的不足与纰漏，欢迎批评指正。  
 # 文章目录  
 目前的最新目录如下：    
+《Chrome V8 源码》36. String.prototype.concat 源码分析  
 《Chrome V8 源码》35. String.prototype.CharAt 源码分析  
 《Chrome V8 源码》34. 终级优化技术 Turbofan  
 《Chrome V8 源码》33. Lazy Compile 的技术细节  
