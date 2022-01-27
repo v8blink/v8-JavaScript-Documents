@@ -14,6 +14,8 @@ V8涉及的技术十分广泛，包括了操作系统、编译技术、计算机
 文章中理论知识很少。我也想多讲解些理论，但个人能力和时间精力确实有限，无法做全面的讲解。文中有很多的不足与纰漏，欢迎批评指正。  
 # 文章目录  
 目前的最新目录如下：    
+《Chrome V8 源码》41. Runtime_StringTrim 源码、触发条件  
+《Chrome V8 源码》40. Runtime substring 详解  
 《Chrome V8 源码》39. String.prototype.split 源码分析  
 《Chrome V8 源码》38. replace 技术细节、性能影响因素  
 《Chrome V8 源码》37. String.prototype.match 源码分析  
