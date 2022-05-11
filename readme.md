@@ -13,7 +13,19 @@ V8涉及的技术十分广泛，包括了操作系统、编译技术、计算机
 # 不足之处  
 文章中理论知识很少。我也想多讲解些理论，但个人能力和时间精力确实有限，无法做全面的讲解。文中有很多的不足与纰漏，欢迎批评指正。  
 # 文章目录  
-目前的最新目录如下：   
+目前的最新目录如下：  
+《Chrome V8 源码》54. Inline Cache 源码（二） 
+《Chrome V8 源码》53. Inline Cache 源码（一）  
+《Chrome V8 源码》52. 解密JSON序列化、stringify源码分析    
+《Chrome V8 源码》51. 揭开 bind 和 call 的神秘面纱     
+《Chrome V8 源码》50.JS 数值转换的内幕，Number() 源码分析    
+《Chrome V8 源码》49. new String 和 String 的本质区别     
+《Chrome V8 源码》48. 弱类型加法的奥秘，"+" 源码分析     
+《Chrome V8 源码》47. "Equal" 与 "StrictEqual" 为什么不同    
+《Chrome V8 源码》46. BigInt的疑惑  
+《Chrome V8 源码》45. JavaScript API 源码分析（1）   
+《Chrome V8 源码》44. Runtime_StringToArray 源码、触发条件  
+《Chrome V8 源码》43. Turbofan 源码分析  
 《Chrome V8 源码》42. InterpreterEntryTrampoline 与优化编译  
 《Chrome V8 源码》41. Runtime_StringTrim 源码、触发条件  
 《Chrome V8 源码》40. Runtime substring 详解  
