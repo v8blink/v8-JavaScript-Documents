@@ -20,7 +20,14 @@ getfoo(o2);
 IC 是什么？  
 getfoo函数执行时，V8 记录并保存调用点 (obj 的 foo 如何获得) 上的寻址方法，下次执行该函数时，直接使用寻址方法（V8 中的术语是 Handler），节省了计算寻址方法的时间，这就是 IC。IC 背后的原理是程序局部性原则，它是指程序在执行时呈现出局部性规律，即在一段时间内，整个程序的执行仅限于程序中的某一部分。  
 IC 与 FeedBack 是什么关系呢？  
-我的理解：IC 是一种方法，FeedBack 是这种方法的实现手段。V8 中规定了哪种 Bytecode 需要 IC 功能，在生成 SharedFunctionInfo 时就知道了有多少种 Bytecode，同时也就知道有多少个 IC 功能。例如：LdaNamedProperty 指令有 IC 功能，这个指令会把结果反馈并保存，下次再用时可以直接使用保存的结果，这个“反馈”就是 FeedBack，也就是具体实现手段。  
+我的理解：IC 是一种方法，FeedBack 是这种方法的实现手段。V8 中规定了哪种 Bytecode 需要 IC 功能，在生成 SharedFunctionInfo 时就知道了有多少种 Bytecode，同时也就知道有多少个 IC 功能。例如：LdaNamedProperty 指令有 IC 功能，这个指令会把结果反馈并保存，下次再用时可以直接使用保存的结果，这个“反馈”就是 FeedBack，也就是具体实现手段。      
+
+==========================
+
+**注意：本文对 InterpreterEntryTrampoline的描述不准确。** 本文发表之后@Zzzzz提示 InterpreterEntryTrampoline 不负责开启 Feedback，而是由字节码 Return 开启 Feedbak，但这部分内容我还没学完，待学完再来修改本文，感谢提示。  
+
+==========================
+
 生成 SharedFunction 时**预定义**了 Feedback metadata 信息，使用 SharedFuncion 生成 JSFunction 也携带了该信息。V8 规定 JSFunction 执行 8 次之后才会启动 Feedback，图 1 给出了 IC 的启动过程。  
 ![avatar](f1.png)  
 **InterpreterEntryTrampoline 前 8 次调用**  
